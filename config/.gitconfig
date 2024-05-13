@@ -8,6 +8,8 @@
 	defaultBranch = main
 [core]
 	editor = code
+[pull]
+	rebase = true
 [alias]
 	a = add --all
 	ai = add -i
