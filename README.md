@@ -15,3 +15,4 @@ This will internally install Homebrew, Git and clone this repo and run `install.
 - setup aliases
     - filesystem
     - git aliases
+    - init zprofile for rbenv `eval "$(rbenv init -)"`
