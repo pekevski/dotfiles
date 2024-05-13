@@ -12,6 +12,21 @@ command_exists () {
   hash "$1" 2> /dev/null
 }
 
+arch=$(uname -m)
+if [ "$arch" = "arm64" ]; then
+  echo "Running on Apple Silicon (M-series)"
+
+  # Check if rosetta is installed for m1
+  if /usr/bin/pgrep oahd >/dev/null 2>&1; then
+    echo "Rosetta 2 is installed!"
+  else
+    echo "Rosetta 2 is not installed. Installing now..."
+    softwareupdate --install-rosetta --agree-to-license
+  fi
+else
+  echo "Not running on Apple Silicon"
+fi
+
 # Update and Install Homebrew apps
 if command_exists brew && [ -f "$DOTFILES_DIR/Brewfile" ]; then
   echo -e "\n${PURPLE}Updating homebrew and packages...${RESET}"

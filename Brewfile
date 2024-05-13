@@ -27,9 +27,10 @@ brew 'gh'
 cask 'spotify'
 cask 'vlc'
 cask '1password'
-cask 'rectangle' # Mac window manager
-cask 'visual-studio-code' # IDE
+cask 'rectangle' # Mac window manager app
+cask 'visual-studio-code' # IDE app
 cask 'warp' # terminal app
+cask 'notion' # documentation app
 
 # Browsers
 cask 'arc'
