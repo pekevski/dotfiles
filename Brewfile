@@ -13,7 +13,7 @@ brew 'node'
 brew 'python'
 brew 'ruby'
 brew 'rbenv'
-rbew 'ruby-build'
+brew 'ruby-build'
 brew 'rust'
 brew 'openjdk'
 
