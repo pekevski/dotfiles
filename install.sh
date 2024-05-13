@@ -36,10 +36,5 @@ if command_exists brew && [ -f "$DOTFILES_DIR/Brewfile" ]; then
   brew cleanup # Remove stale lock files and outdated downloads
 fi
 
-if command_exists mas; then
-  echo -e "\n${PURPLE}Installing mac app store applications${RESET}"
-  mas install 1423210932 # flow
-fi
-
 echo -e "\n${PURPLE}Setup complete, exiting.${RESET}"
 exit 0

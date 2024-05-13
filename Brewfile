@@ -31,6 +31,7 @@ cask 'rectangle' # Mac window manager app
 cask 'visual-studio-code' # IDE app
 cask 'warp' # terminal app
 cask 'notion' # documentation app
+mas 'Flow', id: 1423210932
 
 # Browsers
 cask 'arc'
