@@ -19,6 +19,7 @@ brew 'openjdk'
 
 # DevOps
 brew 'docker'
+cask 'docker'
 
 # Development Utils
 brew 'gh'
